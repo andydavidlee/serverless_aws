@@ -1,0 +1,14 @@
+org: andydlee
+app: serverless-application
+service: serverless-application
+frameworkVersion: '3'
+plugins:
+  - serverless-plugin-typescript
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  function1:
+    handler: handler.handler
